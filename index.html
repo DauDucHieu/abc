@@ -753,7 +753,7 @@
 
         const inputName = $('#name'), inputMoney = $('#money'), inputUpDown = $('#up-down')
 
-        if (JSON.parse(localStorage.isDataSync)) {
+        if (localStorage.isDataSync === true || localStorage.isDataSync === 'true') {
             $('.sync').classList.remove('red')
             $('.sync').classList.add('green')
         } else {
